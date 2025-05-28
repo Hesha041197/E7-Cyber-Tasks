@@ -155,8 +155,17 @@
 
 ## 7. Grant Software Deployment Rights
 
-1. Create a GPO to deploy software.
-2. Right-click GPO → Properties → Security → Grant **Full Control** to service account.
+1. Enable WinRM on the target machine
+2. Add the machine that will deploy the software to the trusted hosts on the target machine
+3. Add the target machine to trusted hosts on deploying machine
+4. Start WinRM session
+5. Enter Credentials
+6. Copy the installation file to target machine
+7. Run the installer
+
+
+![Powershell commands to install Chrome using WinRM](./Screenshots/Software%20Deployment.png)
+
 
 ---
 
